@@ -24,9 +24,19 @@ function validationInputData(inputType){
 }
 
 function buttonLock(){
+    event.preventDefault();
     if(LOGIN_CORRECT == false && PASSWORD_CORRECT == false){
-        alert('no');
-        document.getElementById('button').setAttribute("disabled", "disabled");
-    }}
+        alert('Login snd Password are wrong!');
+        //document.getElementById('button').setAttribute("disabled", "disabled");
+    } else if(LOGIN_CORRECT == true && PASSWORD_CORRECT == false){
+        alert('Password is wrong!');
+        //document.getElementById('button').setAttribute("disabled", "disabled");
+    }else if(LOGIN_CORRECT == false && PASSWORD_CORRECT == true){
+        alert('Login is wrong!');
+        //document.getElementById('button').setAttribute("disabled", "disabled");
+    } else{
+        alert('Request successful!')
+    }
+}
 
 
