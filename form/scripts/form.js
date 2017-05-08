@@ -36,8 +36,8 @@ function buttonLock() {
         //document.getElementById('button').setAttribute("disabled", "disabled");
     } else {
         alert('Request successful!');
-        document.getElementById('login').value = '';
-        document.getElementById('password').value = '';
+        document.getElementById('login').value = ' ';
+        document.getElementById('password').value = ' ';
     }
 }
 
