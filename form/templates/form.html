@@ -10,15 +10,15 @@
 	<body>
 		<form action='?' method='GET' id='form'>
 
-			E-mail:<br><input type='text' id='login' placeholder='email@email.com' onkeyup='validationInputData("login")'>
+			E-mail:<br><input type='text' id='login' placeholder='email@email.com' oninput='validationInputData("login")'>
 			 	<div class='message message_error' id="loginError">Error Login</div><br>
 
 
-			Password:<br><input type='password' id='password' placeholder='password' onkeyup='validationInputData("password")'><br>
+			Password:<br><input type='password' id='password' placeholder='password' oninput='validationInputData("password")'><br>
 			<div class='message' id="passwordError">Error Password</div>
 
 
-			<input type='submit' value='OK' id='button'  onclick="buttonLock()"  >
+			<input type='button' value='OK' id='button' disabled="disabled"  onclick='buttonLock()'>
 
 		</form>
 		<script src="../scripts/form.js"></script>
