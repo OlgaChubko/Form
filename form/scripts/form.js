@@ -23,20 +23,21 @@ function validationInputData(inputType){
     }
 }
 
-function buttonLock(){
+function buttonLock() {
     event.preventDefault();
-    if(LOGIN_CORRECT == false && PASSWORD_CORRECT == false){
+    if (LOGIN_CORRECT == false && PASSWORD_CORRECT == false) {
         alert('Login snd Password are wrong!');
         //document.getElementById('button').setAttribute("disabled", "disabled");
-    } else if(LOGIN_CORRECT == true && PASSWORD_CORRECT == false){
+    } else if (LOGIN_CORRECT == true && PASSWORD_CORRECT == false) {
         alert('Password is wrong!');
         //document.getElementById('button').setAttribute("disabled", "disabled");
-    }else if(LOGIN_CORRECT == false && PASSWORD_CORRECT == true){
+    } else if (LOGIN_CORRECT == false && PASSWORD_CORRECT == true) {
         alert('Login is wrong!');
         //document.getElementById('button').setAttribute("disabled", "disabled");
-    } else{
-        alert('Request successful!')
+    } else {
+        alert('Request successful!');
+        document.getElementById('login').value = '';
+        document.getElementById('password').value = '';
     }
 }
-
 
