@@ -22,23 +22,19 @@ function validationInputData(inputType){
             document.getElementById(inputType + "Error").style.display = 'block';
         }
     }
-}
 
-function buttonLock() {
-    if (LOGIN_CORRECT == false && PASSWORD_CORRECT == false) {
-        //alert('Login snd Password are wrong!');
-        document.getElementById('button').setAttribute("disabled", "disabled");
-    } else if (LOGIN_CORRECT == true && PASSWORD_CORRECT == false) {
-        //alert('Password is wrong!');
-        document.getElementById('button').setAttribute("disabled", "disabled");
-    } else if (LOGIN_CORRECT == false && PASSWORD_CORRECT == true) {
-        //alert('Login is wrong!');
-        document.getElementById('button').setAttribute("disabled", "disabled");
-    } else {
-        document.getElementById('button').removeAttribute("disable");
-        document.getElementById('login').value = '';
-        document.getElementById('password').value = '';
-        //alert('Request successful!');
+    function buttonLock() {
+        if (LOGIN_CORRECT == false && PASSWORD_CORRECT == false) {
+            document.getElementById('button').setAttribute("disabled", "disabled");
+        } else if (LOGIN_CORRECT == true && PASSWORD_CORRECT == false) {
+            document.getElementById('button').setAttribute("disabled", "disabled");
+        } else if (LOGIN_CORRECT == false && PASSWORD_CORRECT == true) {
+            document.getElementById('button').setAttribute("disabled", "disabled");
+        } else {
+            document.getElementById('button').removeAttribute("disabled");
+
+        }
     }
 }
+
 
