@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>
+		</title>
+		<meta charset = 'UTF-8'>
+		<link rel='stylesheet' href='../stylesheets/form.css'>
+
+	</head>
+	<body>
+		<form action='?' method='GET' id='form'>
+
+			E-mail:<br><input type='text' id='login' placeholder='email@email.com' onkeyup='validationInputData("login")'>
+			 	<div class='message message_error' id="loginError">Error Login</div><br>
+
+
+			Password:<br><input type='password' id='password' placeholder='password' onkeyup='validationInputData("password")'><br>
+			<div class='message' id="passwordError">Error Password</div>
+
+
+			<input type='submit' value='OK' id='button'  onclick="buttonLock()"  >
+
+		</form>
+		<script src="../scripts/form.js"></script>
+
+	</body>
+</html>
