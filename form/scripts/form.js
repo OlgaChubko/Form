@@ -13,6 +13,7 @@ function validationInputData(inputType){
         highlightingInput(PASSWORD_CORRECT);
         buttonLock();
     }
+
     function highlightingInput(choice) {
         if (choice) {
             document.getElementById(inputType).style.borderColor = '#9EFFB6';
@@ -32,7 +33,6 @@ function validationInputData(inputType){
             document.getElementById('button').setAttribute("disabled", "disabled");
         } else {
             document.getElementById('button').removeAttribute("disabled");
-
         }
     }
 }
