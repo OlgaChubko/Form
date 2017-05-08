@@ -12,18 +12,16 @@ function validationInputData(inputType){
         highlightingInput(PASSWORD_CORRECT);
     }
 
-    function highlightingInput(choice){
+    function highlightingInput(choice) {
         if (choice) {
             document.getElementById(inputType).style.borderColor = '#9EFFB6';
             document.getElementById(inputType + "Error").style.display = 'none';
         } else {
-            event.preventDefault();
             document.getElementById(inputType).style.borderColor = 'red';
             document.getElementById(inputType + "Error").style.display = 'block';
         }
     }
 }
-
 
 function buttonLock(){
     if(LOGIN_CORRECT == false && PASSWORD_CORRECT == false){
